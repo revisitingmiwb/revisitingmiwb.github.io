@@ -231,21 +231,14 @@
           <source src="static/videos/motivation1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Motivation Video -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <video controls autoplay loop muted style="max-width: 800px; width: 100%; margin-bottom: 20px;">
-            <source src="static/videos/motivation1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+        <div class="content has-text-justified">
+          <p>
+            But is linear blending truly the best way to combine different WB settings for multi-illuminant white-balance correction? Our analysis shows that white-balanced pixels often fall outside the convex hull formed by the presets in sRGB space. For example, selecting just three pixels from an image rendered with five WB presets reveals that their true white-balanced values can't be recovered through any linear combination of the presets as they lie beyond the space those presets span. This highlights a fundamental limitation of linear blending. See the paper for a deeper analysis.
+          </p>
+          <img src="static/images/motivation2.png" alt="WB presets analysis" style="max-width: 800px; width: 100%; margin-bottom: 20px;">
+          <p>
+            To address this limitation, we propose a simple and efficient non-linear approach to blend five WB presets and generate the final white-balanced image. Specifically, we first concatenate the presets and project them using a 3×3 convolutional layer, followed by a Transformer block and an unprojection layer to produce the output image. To enhance efficiency, the Transformer operates in feature space and computes attention in a channel-wise manner. Our model contains only 7.9K parameters and achieves an inference time of under 200 milliseconds.
+          </p>
         </div>
       </div>
     </div>
