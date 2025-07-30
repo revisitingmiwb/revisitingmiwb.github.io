@@ -4,27 +4,25 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="Revisiting Image Fusion for Multi-Illuminant White-Balance Correction - ICCV 2025">
+  <meta property="og:title" content="Revisiting Image Fusion for Multi-Illuminant White-Balance Correction"/>
+  <meta property="og:description" content="A novel approach to multi-illuminant white balance correction using non-linear fusion of white balance presets"/>
+  <meta property="og:url" content="https://davidserra9.github.io/revisitingmiwb.github.io"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/teaser.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="Revisiting Image Fusion for Multi-Illuminant White-Balance Correction">
+  <meta name="twitter:description" content="A novel approach to multi-illuminant white balance correction using non-linear fusion of white balance presets">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:image" content="static/images/teaser.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="white balance, multi-illuminant, image fusion, computer vision, ICCV 2025">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>Academic Project Page</title>
+  <title>Revisiting Image Fusion for Multi-Illuminant White-Balance Correction</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -43,270 +41,376 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+  /* Custom styles for this specific page */
+  body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  body h1, body h2, body h3, body h4, body h5, body h6,
+  body p, body div, body span, body li, body em, body strong {
+    color: #ffffff !important;
+  }
+
+  /* Justify text paragraphs only */
+  body p:not(:has(img)):not(:has(video)) {
+    text-align: justify !important;
+  }
+
+  body a {
+    color:rgb(160, 178, 214) !important;
+  }
+
+  /* Override for button links to keep them black */
+  body a[style*="background-color: #ffffff"] {
+    color: #000000 !important;
+  }
+
+  body a:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+  }
+
+  /* Ensure the container and post content inherit the dark theme */
+  body .container,
+  body .post {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+
+  /* Style blockquotes and other elements */
+  body blockquote {
+    background-color: #1a1a1a !important;
+    border-left-color: #cccccc !important;
+  }
+
+  body hr {
+    border-top-color:rgb(255, 255, 255) !important;
+  }
+
+  /* Style code blocks and inline code */
+  body code {
+    background-color:rgba(255, 255, 255, 0.6) !important;
+    color: #000000 !important;
+    border-radius: 3px;
+    padding: 3px 3px;
+  }
+
+  body pre {
+    background-color:rgba(255, 255, 255, 0.6) !important;
+    color: #000000 !important;
+    border-radius: 6px;
+    padding: 6px 12px;
+  }
+
+  body pre code {
+    background-color: transparent !important;
+    color: #000000 !important;
+  }
+  </style>
 </head>
 <body>
-
 
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Revisiting Image Fusion for Multi-Illuminant White-Balance Correction</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                <a href="https://davidserra9.github.io" target="_blank">David Serrano-Lozano</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a href="https://adityac8.github.io/" target="_blank">Aditya Arora</a><sup>3,4</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.lherranz.org/" target="_blank">Luis Herranz</a><sup>5</sup>,</span>
+              <br>
+              <span class="author-block">
+                <a href="https://csprofkgd.github.io/" target="_blank">Konstantinos G. Derpanis</a><sup>3,4</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.cse.yorku.ca/~mbrown/" target="_blank">Micheal S. Brown</a><sup>3</sup>, and</span>
+              <span class="author-block">
+                <a href="https://jvazquezcorral.github.io/" target="_blank">Javier Vazquez-Corral</a><sup>1,2</sup></span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup><a href="https://www.cvc.uab.es/">Computer Vision Center</a>, 
+                <sup>2</sup><a href="https://www.uab.cat/web/universitat-autonoma-de-barcelona-1345467954774.html">Universitat Autònoma de Barcelona</a>,<br>
+                <sup>3</sup><a href="https://yorkucvil.github.io/">York University</a>,
+                <sup>4</sup><a href="https://vectorinstitute.ai/">Vector Institute</a>, and
+                <sup>5</sup><a href="https://www.uam.es/uam/en/inicio">Universidad Autónoma de Madrid</a>
+              </span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- ArXiv link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2503.14774" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>ArXiv</span>
                 </a>
               </span>
-            </div>
-          </div>
-        </div>
+
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/davidserra9/revisitingMIWB" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
+
+            <!-- Dataset link -->
+            <span class="link-block">
+              <a href="https://github.com/davidserra9/revisitingMIWB" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-database"></i>
+              </span>
+              <span>Dataset (soon)</span>
+            </a>
+          </span>
+
+          <!-- Video link -->
+          <span class="link-block">
+            <a href="" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fab fa-youtube"></i>
+            </span>
+            <span>Video</span>
+          </a>
+        </span>
       </div>
     </div>
+
+    <div class="is-size-5 publication-authors">
+      <span class="author-block">International Conference on Computer Vision, ICCV 2025</span>
+    </div>
   </div>
+</div>
+</div>
+</div>
 </section>
 
-
-<!-- Teaser video-->
+<!-- Teaser Image -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      <img src="static/images/teaser.png" alt="Teaser" style="max-width: 800px; width: 100%; margin-bottom: 20px;">
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser image -->
 
-<!-- Paper abstract -->
+<!-- Motivation -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Motivation</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Auto White Balance (AWB) plays a crucial role in rendering accurate colors in photographs. Most AWB modules assume a single dominant light source in the scene. However, real-world environments often contain mixed lighting conditions, and applying single-illuminant AWB to such scenes typically leads to unsatisfactory results.
+          </p>
+          <p>
+            <a href="https://openaccess.thecvf.com/content/WACV2022/html/Afifi_Auto_White-Balance_Correction_for_Mixed-Illuminant_Scenes_WACV_2022_paper.html">Afifi et al.</a> proposed rendering the RAW image with a set of fixed WB settings and linearly blending to correct multiple illuminants in an image.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
-
-<!-- Image carousel -->
+<!-- Motivation Video -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+          <video controls autoplay loop muted style="max-width: 800px; width: 100%; margin-bottom: 20px;">
+            <source src="static/videos/motivation1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
+<!-- Motivation Analysis -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            But is linear blending truly the best way to combine different WB settings for multi-illuminant white-balance correction? Our analysis shows that white-balanced pixels often fall outside the convex hull formed by the presets in sRGB space. For example, selecting just three pixels from an image rendered with five WB presets reveals that their true white-balanced values can't be recovered through any linear combination of the presets as they lie beyond the space those presets span. This highlights a fundamental limitation of linear blending. See the paper for a deeper analysis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- Video carousel -->
+<!-- Motivation Image -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="static/images/motivation2.png" alt="WB presets analysis" style="max-width: 800px; width: 100%; margin-bottom: 20px;">
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+<!-- Method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            To improve performance, we propose a simple and efficient non-linear approach to blend five WB presets and generate the final white-balanced image. Specifically, we first concatenate the presets and project them using a 3×3 convolutional layer, followed by a Transformer block and an unprojection layer to produce the output image. To enhance efficiency, the Transformer operates in feature space and computes attention in a channel-wise manner. Our model contains only 7.9K parameters and achieves an inference time of under 200 milliseconds.
+          </p>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
 
+<!-- Method Image -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="static/images/method.png" alt="Method overview" style="max-width: 800px; width: 100%; margin-bottom: 20px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dataset -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            All fusion-based multi-illuminant white balance methods rely on single-illuminant datasets for both training and evaluation. The only available multi-illuminant benchmark is a <a href="https://openaccess.thecvf.com/content/WACV2022/html/Afifi_Auto_White-Balance_Correction_for_Mixed-Illuminant_Scenes_WACV_2022_paper.html">synthetic test set</a> comprising just 30 scenes. To address this gap, we repurpose the <a href="https://www.dykim.me/projects/lsmi">LSMI dataset</a>, which provides RAW images of the same scene captured under one, two, and even three different light sources.
+          </p>
+          <p>
+            To construct our benchmark, we first compute the white-balanced version of the single-illuminant image using color checker references. Next, we apply AWB to the multi-illuminant image. Finally, we adjust the per-pixel brightness of the single-illuminant white-balanced image with the AWB-corrected multi-illuminant image.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dataset Image -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="static/images/dataset.png" alt="Repurposed LSMI dataset" style="max-width: 700px; width: 100%; margin-bottom: 20px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our method achieves state-of-the-art performance across all three splits of our dataset. Additionally, we evaluate all methods in a cross-camera setting to assess generalization to unseen cameras, using both the synthetic test set and a single-illuminant setup. Our method consistently outperforms others in terms of ΔE2000, MSE, and MAE. See the paper for more details and qualitative results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Results Image -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <img src="static/images/results_dataset.png" alt="Results" style="max-width: 700px; width: 100%; margin-bottom: 20px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Acknowledgements -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Acknowledgements</h2>
+        <div class="content has-text-justified">
+          <p>
+            DSL, LH, and JVC were supported by Grant PID2021-128178OB-I00 funded by MCIN/AEI/10.13039/ 501100011033 and by ERDF "A way of making Europe", and by the Generalitat de Catalunya CERCA Program. DSL also acknowledges the FPI grant from the Spanish Ministry of Science and Innovation (PRE2022-101525). LH was also supported by the Ramon y Cajal grant RYC2019-027020-I. This work was also partially supported by the grant Càtedra ENIA UAB-Cruïlla (TSI-100929-2023-2) from the Ministry of Economic Affairs and Digital Transition of Spain. This work was funded in part by the CFREF (VISTA) program, an NSERC Discovery Grant, and the Canada Research Chair program.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Citation</h2>
+    <pre><code>@inproceedings{revisitingmiwb2025,
+  title={PromptNorm: Image Geometry Guides Ambient Light Normalization}, 
+  author={Serrano-Lozano, David and Arora, Aditya and Herranz, Luis and Derpanis, Konstantinos G. and Brown, Michael S. and Vazquez-Corral, Javier},
+  booktitle={International Conference in Computer Vision},
+  year={2025}
+}</code></pre>
+  </div>
 </section>
 <!--End BibTex citation -->
 
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
+<footer class="footer">
+<div class="container">
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+        <p>
+          This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+          Commons Attribution-ShareAlike 4.0 International License</a>.
+        </p>
       </div>
     </div>
   </div>
+</div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
