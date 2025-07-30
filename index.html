@@ -44,52 +44,51 @@
 
   <style>
   /* Custom styles for this specific page */
-  body {
+  html, body {
     background-color: #000000 !important;
     color: #ffffff !important;
   }
-
+  body, .container, .post, .hero, .section {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
+  .hero.is-light, .section.is-light, .hero.is-white, .section.is-white {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+  }
   body h1, body h2, body h3, body h4, body h5, body h6,
   body p, body div, body span, body li, body em, body strong {
     color: #ffffff !important;
   }
-
   /* Justify text paragraphs only */
   body p:not(:has(img)):not(:has(video)) {
     text-align: justify !important;
   }
-
   body a {
     color:rgb(160, 178, 214) !important;
   }
-
   /* Override for button links to keep them black */
   body a[style*="background-color: #ffffff"] {
     color: #000000 !important;
   }
-
   body a:hover {
     color: #ffffff !important;
     text-decoration: underline;
   }
-
   /* Ensure the container and post content inherit the dark theme */
   body .container,
   body .post {
     background-color: #000000 !important;
     color: #ffffff !important;
   }
-
   /* Style blockquotes and other elements */
   body blockquote {
     background-color: #1a1a1a !important;
     border-left-color: #cccccc !important;
   }
-
   body hr {
     border-top-color:rgb(255, 255, 255) !important;
   }
-
   /* Style code blocks and inline code */
   body code {
     background-color:rgba(255, 255, 255, 0.6) !important;
@@ -97,14 +96,12 @@
     border-radius: 3px;
     padding: 3px 3px;
   }
-
   body pre {
     background-color:rgba(255, 255, 255, 0.6) !important;
     color: #000000 !important;
     border-radius: 6px;
     padding: 6px 12px;
   }
-
   body pre code {
     background-color: transparent !important;
     color: #000000 !important;
